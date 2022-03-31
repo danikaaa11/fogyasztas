@@ -1,0 +1,1 @@
+let F =document.getElementById˙('fogyasztas');
