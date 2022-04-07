@@ -28,12 +28,12 @@
         <p>Megjegyzés: Ha a fogyasztás F és az üzemanyagtartály térfogata V, akkor az autó egy tank benzinnel V*100/F kilométert tesz meg.</p>
         
         <hr>
-        <h3>Megoldás</h3>
+        <h3>Megoldás 1. </h3>
         <div class="form">
             <form action="">
 
     <label for="fogyasztas">Fogyasztás:</label>
-    <input type="text" name="fogyasztas" id="fogyasztas" class="fogyasztas">
+    <input type="text " name="fogyasztas" id="fogyasztas" class="fogyasztas">
     L/100km
 <br>
     <label for="tank">Üzemanyagtartály:</label>
@@ -44,12 +44,40 @@
     <input type="text" name="ut" id="ut" class="ut">
     Km
 <br>
-    <input type="button" value="Számolás" onclick="szamol();">        
+    1.<input type="submit" value="Számol" onclick="return szamol();">
+    <br> 
         </div>
     </form>
         <p id="jel">?</p>
+        
+        <hr>
+    <h3>Megoldás 2.</h3>
+    <div class="form">
+        <form action="">
+
+<label for="fogyasztas">Fogyasztás:</label>
+<input type="text " name="fogyasztas" id="fogyasztas" class="fogyasztas">
+L/100km
+<br>
+<label for="tank">Üzemanyagtartály:</label>
+<input type="text" name="tank" id="tank" class="tank">
+L
+<br>
+<label for="ut">Út:</label>
+<input type="text" name="ut" id="ut" class="ut">
+Km
+<br>
+<br>
+2.<input type="submit" value="Számol" onclick="szamol();">        
+    </div>
+</form>
+    <p id="jel">?</p>
+</div>
+
     </div>
 
+
+    
     <Script src="script.js"></Script>
 
 </body>
