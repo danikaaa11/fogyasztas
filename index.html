@@ -4,44 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fogyasztás</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     
-<div class="container">
-    <h1>k_infoism_05okt</h1>
-    <h2>II.</h2>
-    
-    <h3>2. feladat:</h3>
-    
-    <p>Egy autó üzemanyag-fogyasztását olyan módon adjuk meg, hogy 100 kilométer távolságú út megtételéhez hány liter benzinre van szüksége.</p>
-    <p>Készítsen programot, amely billentyűzetről beolvassa egy autó fogyasztását, üzemanyagtartályának űrtartalmát, valamint a jármű által megteendő út hosszát, és a fenti adatok alapján megállapítja, hogy kell-e tankolnia az autónak az adott hosszúságú út során amennyiben tele tankkal indult útnak!</p>
-    <p>A program megállapításának megfelelően írja képernyőre az alábbi mondatok közül a megfelelőt!</p>
-    <ul>
-        <l1>"Az út megtehető tankolás nélkül."</l1>
-        <l1>"Az út során tankolni kell!"</l1>
-    </ul>
-    
-    <p>Megjegyzés: Ha a fogyasztás F és az üzemanyagtartály térfogata V, akkor az autó egy tank benzinnel V*100/F kilométert tesz meg.</p>
-    
-    <hr>
-    <p id="Megoldás"></p>
-    <div class="form">
-        <form action=""></form>
-        <label for="fogyasztas">Fogyasztas</label>
-        <input type="text" name="fogyasztas" title=" fogyasztas">L/100km <br>     
-        <label for="üzemanyagtartály">Üzemanyagtartály</label>
-        <input type="text" name="tank" id="tank">L<br>
-        <label for="Ut">Ut</label>
-        <input type="text" name="ut" id="ut">Km <br>
-        <button id="szamol" onclick="szamol()" >Számol</button>
+    <div class="container">
+        <h1>k_infoism_05okt</h1>
+        <h2>II.</h2>
+        
+        <h3>2. feladat:</h3>
+        
+        <p>Egy autó üzemanyag-fogyasztását olyan módon adjuk meg, hogy 100 kilométer távolságú út megtételéhez hány liter benzinre van szüksége.</p>
+        <p>Készítsen programot, amely billentyűzetről beolvassa egy autó fogyasztását, üzemanyagtartályának űrtartalmát, valamint a jármű által megteendő út hosszát, és a fenti adatok alapján megállapítja, hogy kell-e tankolnia az autónak az adott hosszúságú út során amennyiben tele tankkal indult útnak!</p>
+        <p>A program megállapításának megfelelően írja képernyőre az alábbi mondatok közül a megfelelőt!</p>
+           
+        <ul>
+        <li>"Az út megtehető tankolás nélkül."</li>
+        <li>"Az út során tankolni kell!"</li>
+        </ul>
+           
+        
+        
+        <p>Megjegyzés: Ha a fogyasztás F és az üzemanyagtartály térfogata V, akkor az autó egy tank benzinnel V*100/F kilométert tesz meg.</p>
+        
+        <hr>
+        <h3>Megoldás</h3>
+        <div class="form">
+            <form action="">
+
+    <label for="fogyasztas">Fogyasztás:</label>
+    <input type="text" name="fogyasztas" id="fogyasztas" class="fogyasztas">
+    L/100km
+<br>
+    <label for="tank">Üzemanyagtartály:</label>
+    <input type="text" name="tank" id="tank" class="tank">
+    L
+<br>
+    <label for="ut">Út:</label>
+    <input type="text" name="ut" id="ut" class="ut">
+    Km
+<br>
+    <input type="button" value="Számolás" onclick="szamol();">        
+        </div>
+    </form>
+        <p id="jel">?</p>
     </div>
-    
-    <p class="megoldas">?</p>
-</div>
 
+    <Script src="script.js"></Script>
 
- <script src="script.js"></script>
 </body>
 </html>

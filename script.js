@@ -1,14 +1,14 @@
 function szamol () {
-let F =document.getElementById('fogyasztas');
-let V =document.getElementById('tank');
-let Ut =document.getElementById('ut');
+   let F = document.getElementById('fogyasztas').value;
+   let V = document.getElementById('tank').value;
+   let Ut = document.getElementById('ut').value;
 
-let megteheto = V * 100/ F ;
+   let megtehetoUt = V * 100 / F;
 
-if (megteheto<Ut){
-    document.getElementById('megoldas').innerHTML = "az út során tankolni kell";
- }
- {
-    document.getElementById('megoldás').innerHTML = "Az út megtehető tankolás nélkül"
- }
+
+   if (megtehetoUt < Ut) {
+   document.getElementById('megoldas').innerHTML = "Az út során tankolni kell!"
+   } else {
+   document.getElementById('megoldas').innerHTML = "Az út megtehető tankolás nélkül."
+   }
 }
